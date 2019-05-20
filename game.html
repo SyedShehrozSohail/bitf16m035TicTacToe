@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>tic tac toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+    <div id="main">
+        <div id="headingDiv">
+            <h1 class="text" id="header">Tic Tac Toe</h1>
+            <div id="dropdown">
+                <select class="button" id="selection" onchange="startGame()">
+                    <option class="button" value="1" selected>
+                        Easy
+                    </option>
+                    <option class="button" value="2"  >
+                        impossible
+                    </option>
+                    <option class="button" value="3">
+                        two players
+                    </option>
+                </select>
+                <input class="button" id="button1" type="button" value="X         -">
+                <input class="button" id="button2" type="button"  value="O         -">
+                 
+            </div>
+            <br>
+        </div>
+        <div id="tableDiv">
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="endgame">
+            <div class="text"></div>
+        </div>
+        <center>
+            <h2 onclick="startGame()" > Restart Game</h2>
+            </center>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
